@@ -22,3 +22,12 @@ echo(lookup_kv(dict, "foo")); // Will echo 42
 json = import("./json.json");
 echo(lookup_kv(json, "foo")); // Will echo whatever `json.json` says.
 ```
+### API
+
+#### `lookup_kv(dict, key, default = undef)`
+Look up key `key` in object or associative array `dict`.
+
+Arguments:
+  * `dict` (object or associative array) - dictionary to search
+  * `key` (string) - key to look for
+  * `default` - what to return when the key isn't found
